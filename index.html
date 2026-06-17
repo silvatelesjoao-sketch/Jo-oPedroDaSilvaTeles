@@ -3,176 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neymar Jr. - O Craque do Futebol</title>
+    <title>Vídeo Incorporado</title>
     <style>
-        /* Estilização Geral */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
             background-color: #f4f4f9;
-            color: #333;
-        }
-
-        /* Cabeçalho */
-        header {
-            background: linear-gradient(135deg, #009c3b, #ffdf00);
-            color: #002776;
-            text-align: center;
-            padding: 40px 20px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-
-        header h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             margin: 0;
-            font-size: 2.8em;
-            text-transform: uppercase;
-            letter-spacing: 2px;
         }
-
-        header p {
-            margin: 5px 0 0 0;
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-
-        /* Container Principal */
-        .container {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
-
-        /* Seções */
-        section {
-            background: #fff;
-            padding: 25px;
-            margin-bottom: 25px;
+        .video-container {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-
-        h2 {
-            color: #002776;
-            border-bottom: 3px solid #009c3b;
-            padding-bottom: 8px;
-            margin-top: 0;
-        }
-
-        /* Biografia */
-        .bio-conteudo {
-            line-height: 1.6;
-            font-size: 1.1em;
-        }
-
-        /* Tabela de Estatísticas */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-        }
-
-        th, td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-
-        th {
-            background-color: #002776;
-            color: white;
-        }
-
-        tr:hover {
-            background-color: #f1f1f1;
-        }
-
-        /* Lista de Títulos */
-        ul {
-            list-style-type: square;
-            padding-left: 20px;
-            line-height: 1.8;
-        }
-
-        /* Rodapé */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: #fff;
-            margin-top: 40px;
-            font-size: 0.9em;
+            overflow: hidden;
+            background-color: #000;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Neymar Jr.</h1>
-        <p>Alegria e Ousadia no Futebol Mundial</p>
-    </header>
-
-    <div class="container">
-
-        <section id="biografia">
-            <h2>Biografia</h2>
-            <div class="bio-conteudo">
-                <p>Nascido em Mogi das Cruzes em 1992, <strong>Neymar da Silva Santos Júnior</strong> é amplamente considerado um dos maiores talentos do futebol moderno. Revelado pelo Santos FC, onde conquistou a histórica Copa Libertadores, ele encantou o mundo com seus dribles imprevisíveis e genialidade em campo.</p>
-                <p>Fez história no Barcelona formando o lendário trio MSN (Messi, Suárez e Neymar), brilhou no Paris Saint-Germain e seguiu sua trajetória internacional no Al-Hilal, além de ser o maior artilheiro da história da Seleção Brasileira em jogos oficiais.</p>
-            </div>
-        </section>
-
-        <section id="titulos">
-            <h2>Principais Conquistas</h2>
-            <ul>
-                <li><strong>Santos:</strong> Copa Libertadores da América (2011) e Copa do Brasil (2010)</li>
-                <li><strong>Barcelona:</strong> UEFA Champions League (2014-15) e Mundial de Clubes da FIFA (2015)</li>
-                <li><strong>Paris Saint-Germain:</strong> Vários títulos da Ligue 1 e Copas da França</li>
-                <li><strong>Seleção Brasileira:</strong> Medalha de Ouro nas Olimpíadas do Rio (2016) e Copa das Confederações (2013)</li>
-            </ul>
-        </section>
-
-        <section id="estatisticas">
-            <h2>Clubes de Destaque</h2>
-            <p>Confira a passagem do craque pelas principais equipes do futebol mundial:</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Período</th>
-                        <th>Clube</th>
-                        <th>País</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2009 – 2013</td>
-                        <td>Santos</td>
-                        <td>Brasil</td>
-                    </tr>
-                    <tr>
-                        <td>2013 – 2017</td>
-                        <td>Barcelona</td>
-                        <td>Espanha</td>
-                    </tr>
-                    <tr>
-                        <td>2017 – 2023</td>
-                        <td>Paris Saint-Germain</td>
-                        <td>França</td>
-                    </tr>
-                    <tr>
-                        <td>2023 – Presente</td>
-                        <td>Al-Hilal</td>
-                        <td>Arábia Saudita</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
+    <div class="video-container">
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/K2csY1cMpfA?si=BjAQiQaRK_7aEbfQ" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        </iframe>
     </div>
 
-    <footer>
-        <p>&copy; Página de Fã do Neymar Jr. Criada para fins demonstrativos.</p>
-    </footer>
-
 </body>
-</html>
+</html>]
