@@ -3,39 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vídeo Incorporado</title>
+    <title>Minha Página com Vídeo</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            line-height: 1.6;
             margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
         }
-        .video-container {
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
             border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #222;
+            text-align: center;
+        }
+        /* Estilo para tornar o vídeo responsivo */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporção 16:9 */
+            padding-top: 30px;
+            height: 0;
             overflow: hidden;
-            background-color: #000;
+            margin-top: 20px;
+            border-radius: 4px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
 <body>
 
-    <div class="video-container">
-        <iframe 
-            width="560" 
-            height="315" 
-            src="https://www.youtube.com/embed/0VvpzMfjBi4?si=T2uqVOzVEXIXgfW2" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen>
-        </iframe>
-    </div>
+    <div class="container">
+        <h1>Confira o Vídeo Abaixo</h1>
+        <p>Este é um exemplo de como incorporar um reprodutor de vídeo do YouTube diretamente no seu conteúdo de forma responsiva.</p>
+        
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/recHgNtlUjc?si=E8LsRcCeFJQUJJVe" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        </div>
 
 </body>
 </html>
